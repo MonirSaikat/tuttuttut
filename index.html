@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -7,10 +7,41 @@
     <title>TutTutTut</title>
   </head>
   <body>
+    <button class="button primary ab-dropdown-trigger">
+      <span>Css Variables</span>
+      <svg
+        width="100%"
+        height="100%"
+        viewBox="0 0 24 24"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M12 5V19M5 12H19"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </svg>
+    </button>
 
-    <h1>Welcome to the danger part</h1>
-    
-    
-    <script type="module" src="/main.js"></script>
+    <div class="dropdown ab-dropdown none">
+      <div class="ab-dropdown-header">
+        <span>Add New Item</span>
+        <button class="ab-dropdown-button">
+          <ion-icon name="add-outline"></ion-icon>
+        </button>
+      </div>
+      <div class="dropdown-items">
+        <p class="no-items">No Variables</p>
+      </div>
+    </div>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script type="module" src="/src/main.js"></script>
   </body>
 </html>

@@ -1,0 +1,61 @@
+.ab-dropdown {
+  box-shadow: $box-shadow-2;
+  background-color: $dark;
+  width: 200px;
+  color: $light;
+  position: absolute;
+  $padding: 0.5rem;
+
+  .dropdown-items {
+    padding: $padding;
+
+    .dropdown-item {
+      padding: 5px 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #eee;
+
+      &:last-child {
+        border-bottom: 0;
+      }
+
+      .color-box {
+        display: inline-block;
+        width: 22px;
+        height: 22px;
+        background-color: attr(data-color);
+      }
+    }
+  }
+
+  &-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #373A40;
+    padding: $padding;
+
+    span {
+      font-size: 16px;
+      font-weight: 300;
+    }
+
+    ion-icon {
+      font-size: 1.4rem;
+      color: $light;
+    }
+
+    .ab-dropdown-button {
+      @extend .button;
+      background: transparent;
+      padding: 0;
+    }
+  }
+
+  .no-items {
+    text-align: center;
+    font-weight: 200;
+    color: #f0f0f0;
+  }
+}
